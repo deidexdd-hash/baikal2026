@@ -1,0 +1,1425 @@
+@font-face {
+  font-display: swap;
+  font-family: "Alice";
+  src: url("Alice/Alice-Regular.eot");
+  src: url("Alice/Alice-Regular.woff") format("woff"),
+    url("Alice/Alice-Regular.ttf") format("truetype"),
+    url("Alice/Alice-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Alex Brush";
+  font-style: normal;
+  font-weight: 400;
+  src: url("AlexBrush/alex-brush-v10-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    url("AlexBrush/alex-brush-v10-latin-ext_latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Amatic SC";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Amatic/amatic-sc-v12-latin-ext_cyrillic_latin_vietnamese-regular.woff2")
+      format("woff2"),
+    url("Amatic/amatic-sc-v12-latin-ext_cyrillic_latin_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Amatic SC";
+  font-style: normal;
+  font-weight: 700;
+  src: url("Amatic/amatic-sc-v12-latin-ext_cyrillic_latin_vietnamese-700.woff2")
+      format("woff2"),
+    url("Amatic/amatic-sc-v12-latin-ext_cyrillic_latin_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Black Ops One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("BlackOpsOne/black-ops-one-v10-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    url("BlackOpsOne/black-ops-one-v10-latin-ext_latin-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Caveat/caveat-v5-latin-ext_cyrillic_latin-regular.woff2")
+      format("woff2"),
+    url("Caveat/caveat-v5-latin-ext_cyrillic_latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("Caveat/caveat-v5-latin-ext_cyrillic_latin-700.woff2")
+      format("woff2"),
+    url("Caveat/caveat-v5-latin-ext_cyrillic_latin-700.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Cinzel/cinzel-v8-latin-ext_latin-regular.woff2") format("woff2"),
+    url("Cinzel/cinzel-v8-latin-ext_latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 700;
+  src: url("Cinzel/cinzel-v8-latin-ext_latin-700.woff2") format("woff2"),
+    url("Cinzel/cinzel-v8-latin-ext_latin-700.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 300;
+  src: url("Comfortaa/comfortaa-v22-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-300.woff2")
+      format("woff2"),
+    url("Comfortaa/comfortaa-v22-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-300.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Comfortaa/comfortaa-v22-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-regular.woff2")
+      format("woff2"),
+    url("Comfortaa/comfortaa-v22-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  src: url("Comfortaa/comfortaa-v22-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-700.woff2")
+      format("woff2"),
+    url("Comfortaa/comfortaa-v22-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 300;
+  src: url("CormorantInfant/cormorant-infant-v7-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-300.woff2")
+      format("woff2"),
+    url("CormorantInfant/cormorant-infant-v7-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-300.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 400;
+  src: url("CormorantInfant/cormorant-infant-v7-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-regular.woff2")
+      format("woff2"),
+    url("CormorantInfant/cormorant-infant-v7-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 700;
+  src: url("CormorantInfant/cormorant-infant-v7-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-700.woff2")
+      format("woff2"),
+    url("CormorantInfant/cormorant-infant-v7-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant Unicase";
+  font-style: normal;
+  font-weight: 300;
+  src: url("CormorantUnicase/cormorant-unicase-v7-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-300.woff2")
+      format("woff2"),
+    url("CormorantUnicase/cormorant-unicase-v7-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-300.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant Unicase";
+  font-style: normal;
+  font-weight: 400;
+  src: url("CormorantUnicase/cormorant-unicase-v7-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-regular.woff2")
+      format("woff2"),
+    url("CormorantUnicase/cormorant-unicase-v7-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant Unicase";
+  font-style: normal;
+  font-weight: 700;
+  src: url("CormorantUnicase/cormorant-unicase-v7-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-700.woff2")
+      format("woff2"),
+    url("CormorantUnicase/cormorant-unicase-v7-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("DancingScript/dancing-script-v10-latin-ext_latin_vietnamese-regular.woff2")
+      format("woff2"),
+    url("DancingScript/dancing-script-v10-latin-ext_latin_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 700;
+  src: url("DancingScript/dancing-script-v10-latin-ext_latin_vietnamese-700.woff2")
+      format("woff2"),
+    url("DancingScript/dancing-script-v10-latin-ext_latin_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Didact Gothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("DidactGotic/didactgothic.woff2") format("woff2"),
+    url("DidactGotic/didactgothic.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Eater";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Eater/eater-v7-latin-ext_latin-regular.woff2") format("woff2"),
+    url("Eater/eater-v7-latin-ext_latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Emilys Candy";
+  font-style: normal;
+  font-weight: 400;
+  src: url("EmilysCandy/emilys-candy-v6-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    url("EmilysCandy/emilys-candy-v6-latin-ext_latin-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Forum/forum-v9-latin-ext_cyrillic-ext_cyrillic_latin-regular.woff2")
+      format("woff2"),
+    url("Forum/forum-v9-latin-ext_cyrillic-ext_cyrillic_latin-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Julius Sans One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("JuliusSans/julius-sans-one-v7-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    url("JuliusSans/julius-sans-one-v7-latin-ext_latin-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 300;
+  src: url("Jura/jura-v10-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-300.woff2")
+      format("woff2"),
+    url("Jura/jura-v10-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-300.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Jura/jura-v10-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-regular.woff2")
+      format("woff2"),
+    url("Jura/jura-v10-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 700;
+  src: url("Jura/jura-v10-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-700.woff2")
+      format("woff2"),
+    url("Jura/jura-v10-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Kelly Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("KellySlab/kelly-slab-v9-latin-ext_cyrillic_latin-regular.woff2")
+      format("woff2"),
+    url("KellySlab/kelly-slab-v9-latin-ext_cyrillic_latin-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Knewave";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Knewave/knewave-v7-latin-ext_latin-regular.woff2") format("woff2"),
+    url("Knewave/knewave-v7-latin-ext_latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Limelight";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Limelight/limelight-v9-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    url("Limelight/limelight-v9-latin-ext_latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Lobster";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Lobster/lobster-v21-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-regular.woff2")
+      format("woff2"),
+    url("Lobster/lobster-v21-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Marck Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("MarckScript/marck-script-v9-latin-ext_cyrillic_latin-regular.woff2")
+      format("woff2"),
+    url("MarckScript/marck-script-v9-latin-ext_cyrillic_latin-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Marmelad";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Marmelad/marmelad-v8-latin-ext_cyrillic_latin-regular.woff2")
+      format("woff2"),
+    url("Marmelad/marmelad-v8-latin-ext_cyrillic_latin-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Metal Mania";
+  font-style: normal;
+  font-weight: 400;
+  src: url("MetalMania/metal-mania-v8-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    url("MetalMania/metal-mania-v8-latin-ext_latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("Montserrat/montserrat-v13-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-300.woff2")
+      format("woff2"),
+    url("Montserrat/montserrat-v13-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-300.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Montserrat/montserrat-v13-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-regular.woff2")
+      format("woff2"),
+    url("Montserrat/montserrat-v13-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("Montserrat/montserrat-v13-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-700.woff2")
+      format("woff2"),
+    url("Montserrat/montserrat-v13-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Old Standart TT";
+  font-style: normal;
+  font-weight: 400;
+  src: url("OldStandartTT/old-standard-tt-v11-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-regular.woff2")
+      format("woff2"),
+    url("OldStandartTT/old-standard-tt-v11-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Old Standart TT";
+  font-style: normal;
+  font-weight: 600;
+  src: url("OldStandartTT/OldStandardTT600.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("OpenSans/open-sans-v16-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-300.woff2")
+      format("woff2"),
+    url("OpenSans/open-sans-v16-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-300.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("OpenSans/open-sans-v16-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-regular.woff2")
+      format("woff2"),
+    url("OpenSans/open-sans-v16-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("OpenSans/open-sans-v16-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-700.woff2")
+      format("woff2"),
+    url("OpenSans/open-sans-v16-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  src: url("Oswald/oswald-v23-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-300.woff2")
+      format("woff2"),
+    url("Oswald/oswald-v23-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-300.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Oswald/oswald-v23-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-regular.woff2")
+      format("woff2"),
+    url("Oswald/oswald-v23-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  src: url("Oswald/oswald-v23-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-700.woff2")
+      format("woff2"),
+    url("Oswald/oswald-v23-latin-ext_cyrillic-ext_cyrillic_latin_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Pirata One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("PirataOne/pirata-one-v7-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    url("PirataOne/pirata-one-v7-latin-ext_latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("PlayfairDisplay/playfair-display-v14-latin-ext_cyrillic_latin_vietnamese-regular.woff2")
+      format("woff2"),
+    url("PlayfairDisplay/playfair-display-v14-latin-ext_cyrillic_latin_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  src: url("PlayfairDisplay/playfair-display-v14-latin-ext_cyrillic_latin_vietnamese-700.woff2")
+      format("woff2"),
+    url("PlayfairDisplay/playfair-display-v14-latin-ext_cyrillic_latin_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poiret One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("PoiretOne/poiret-one-v7-latin-ext_cyrillic_latin-regular.woff2")
+      format("woff2"),
+    url("PoiretOne/poiret-one-v7-latin-ext_cyrillic_latin-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("PTSerif/pt-serif-v10-latin-ext_cyrillic-ext_cyrillic_latin-regular.woff2")
+      format("woff2"),
+    url("PTSerif/pt-serif-v10-latin-ext_cyrillic-ext_cyrillic_latin-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  src: url("PTSerif/pt-serif-v10-latin-ext_cyrillic-ext_cyrillic_latin-700.woff2")
+      format("woff2"),
+    url("PTSerif/pt-serif-v10-latin-ext_cyrillic-ext_cyrillic_latin-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  src: url("Play/Play-Bold.eot");
+  src: url("Play/Play-Bold.eot?#iefix") format("embedded-opentype"),
+    url("Play/Play-Bold.woff2") format("woff2"),
+    url("Play/Play-Bold.woff") format("woff"),
+    url("Play/Play-Bold.svg#Play-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  src: url("Play/Play-Regular.eot");
+  src: url("Play/Play-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Play/Play-Regular.woff2") format("woff2"),
+    url("Play/Play-Regular.woff") format("woff"),
+    url("Play/Play-Regular.svg#Play-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  src: url("Raleway/raleway-v13-latin-ext_latin-300.woff2") format("woff2"),
+    url("Raleway/raleway-v13-latin-ext_latin-300.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Raleway/raleway-v13-latin-ext_latin-regular.woff2") format("woff2"),
+    url("Raleway/raleway-v13-latin-ext_latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url("Raleway/raleway-v13-latin-ext_latin-700.woff2") format("woff2"),
+    url("Raleway/raleway-v13-latin-ext_latin-700.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("Roboto/roboto-v19-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-300.woff2")
+      format("woff2"),
+    url("Roboto/roboto-v19-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-300.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Roboto/roboto-v19-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-regular.woff2")
+      format("woff2"),
+    url("Roboto/roboto-v19-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("Roboto/roboto-v19-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-700.woff2")
+      format("woff2"),
+    url("Roboto/roboto-v19-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 300;
+  src: url("RobotoCondensed/roboto-condensed-v17-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-300.woff2")
+      format("woff2"),
+    url("RobotoCondensed/roboto-condensed-v17-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-300.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("RobotoCondensed/roboto-condensed-v17-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-regular.woff2")
+      format("woff2"),
+    url("RobotoCondensed/roboto-condensed-v17-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("RobotoCondensed/roboto-condensed-v17-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-700.woff2")
+      format("woff2"),
+    url("RobotoCondensed/roboto-condensed-v17-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  src: url("RobotoSlab/roboto-slab-v8-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-300.woff2")
+      format("woff2"),
+    url("RobotoSlab/roboto-slab-v8-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-300.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("RobotoSlab/roboto-slab-v8-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-regular.woff2")
+      format("woff2"),
+    url("RobotoSlab/roboto-slab-v8-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: url("RobotoSlab/roboto-slab-v8-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-700.woff2")
+      format("woff2"),
+    url("RobotoSlab/roboto-slab-v8-latin-ext_cyrillic-ext_cyrillic_latin_greek_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Rubik Mono One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("RubikMonoOne/rubik-mono-one-v7-latin-ext_cyrillic_latin-regular.woff2")
+      format("woff2"),
+    url("RubikMonoOne/rubik-mono-one-v7-latin-ext_cyrillic_latin-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Ruge Boogie";
+  font-style: normal;
+  font-weight: 400;
+  src: url("RugeBoogie/ruge-boogie-v9-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    url("RugeBoogie/ruge-boogie-v9-latin-ext_latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Ruslan Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("RuslanDisplay/ruslan-display-v9-latin-ext_cyrillic_latin-regular.woff2")
+      format("woff2"),
+    url("RuslanDisplay/ruslan-display-v9-latin-ext_cyrillic_latin-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Sacramento";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Sacramento/sacramento-v6-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    url("Sacramento/sacramento-v6-latin-ext_latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Sancreek";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Sancreek/sancreek-v9-latin-ext_latin-regular.woff2") format("woff2"),
+    url("Sancreek/sancreek-v9-latin-ext_latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Yanone Kaffeesatz";
+  font-style: normal;
+  font-weight: 300;
+  src: url("Yanone/yanone-kaffeesatz-v10-latin-ext_cyrillic_latin_vietnamese-300.woff2")
+      format("woff2"),
+    url("Yanone/yanone-kaffeesatz-v10-latin-ext_cyrillic_latin_vietnamese-300.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Yanone Kaffeesatz";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Yanone/yanone-kaffeesatz-v10-latin-ext_cyrillic_latin_vietnamese-regular.woff2")
+      format("woff2"),
+    url("Yanone/yanone-kaffeesatz-v10-latin-ext_cyrillic_latin_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Yanone Kaffeesatz";
+  font-style: normal;
+  font-weight: 700;
+  src: url("Yanone/yanone-kaffeesatz-v10-latin-ext_cyrillic_latin_vietnamese-700.woff2")
+      format("woff2"),
+    url("Yanone/yanone-kaffeesatz-v10-latin-ext_cyrillic_latin_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Bad Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("BadScript/BadScript-Regular.woff2") format("woff2"),
+    url("BadScript/BadScript-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Comforter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Comforter/Comforter-Regular.woff2") format("woff2"),
+    url("Comforter/Comforter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Rampart One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("RampartOne/RampartOne-Regular.woff2") format("woff2"),
+    url("RampartOne/RampartOne-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Reggae One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("ReggaeOne/ReggaeOne-Regular.woff2") format("woff2"),
+    url("ReggaeOne/ReggaeOne-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Stick";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Stick/Stick-Regular.woff2") format("woff2"),
+    url("Stick/Stick-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Train One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("TrainOne/TrainOne-Regular.woff2") format("woff2"),
+    url("TrainOne/TrainOne-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Akronime";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Akronim/Akronim-Regular.woff2") format("woff2"),
+    url("Akronim/Akronim-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Corinthia";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Corinthia/Corinthia-Regular.woff2") format("woff2"),
+    url("Corinthia/Corinthia-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Corinthia";
+  font-style: normal;
+  font-weight: 600;
+  src: url("Corinthia/Corinthia-Bold.woff2") format("woff2"),
+    url("Corinthia/Corinthia-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Euphoria Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("EuphoriaScript/EuphoriaScript-Regular.woff2") format("woff2"),
+    url("EuphoriaScript/EuphoriaScript-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Fleur DeLeah";
+  font-style: normal;
+  font-weight: 400;
+  src: url("FleurDeLeah/FleurDeLeah-Regular.woff2") format("woff2"),
+    url("FleurDeLeah/FleurDeLeah-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Frederickathe Great";
+  font-style: normal;
+  font-weight: 400;
+  src: url("FrederickatheGreat/FrederickatheGreat-Regular.woff2")
+      format("woff2"),
+    url("FrederickatheGreat/FrederickatheGreat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Henny Penny";
+  font-style: normal;
+  font-weight: 400;
+  src: url("HennyPenny/HennyPenny-Regular.woff2") format("woff2"),
+    url("HennyPenny/HennyPenny-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Italianno";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Italianno/Italianno-Regular.woff2") format("woff2"),
+    url("Italianno/Italianno-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Kings";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Kings/Kings-Regular.woff2") format("woff2"),
+    url("Kings/Kings-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Megrim";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Megrim/Megrim-Regular.woff2") format("woff2"),
+    url("Megrim/Megrim-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Metamorphous";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Metamorphous/Metamorphous-Regular.woff2") format("woff2"),
+    url("Metamorphous/Metamorphous-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Monoton";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Monoton/Monoton-Regular.woff2") format("woff2"),
+    url("Monoton/Monoton-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Nosifer";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Nosifer/Nosifer-Regular.woff2") format("woff2"),
+    url("Nosifer/Nosifer-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Palette Mosaic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("PaletteMosaic/PaletteMosaic-Regular.woff2") format("woff2"),
+    url("PaletteMosaic/PaletteMosaic-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Passions Conflict";
+  font-style: normal;
+  font-weight: 400;
+  src: url("PassionsConflict/PassionsConflict-Regular.woff2") format("woff2"),
+    url("PassionsConflict/PassionsConflict-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Permanent Marker";
+  font-style: normal;
+  font-weight: 400;
+  src: url("PermanentMarker/PermanentMarker-Regular.woff2") format("woff2"),
+    url("PermanentMarker/PermanentMarker-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Righteous/Righteous-Regular.woff2") format("woff2"),
+    url("Righteous/Righteous-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Shadows IntoLight";
+  font-style: normal;
+  font-weight: 400;
+  src: url("ShadowsIntoLight/ShadowsIntoLight-Regular.woff2") format("woff2"),
+    url("ShadowsIntoLight/ShadowsIntoLight-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "SueEllen Francisco";
+  font-style: normal;
+  font-weight: 400;
+  src: url("SueEllenFrancisco/SueEllenFrancisco-Regular.woff2") format("woff2"),
+    url("SueEllenFrancisco/SueEllenFrancisco-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Unifraktur Maguntia";
+  font-style: normal;
+  font-weight: 400;
+  src: url("UnifrakturMaguntia/UnifrakturMaguntia-Regular.woff2")
+      format("woff2"),
+    url("UnifrakturMaguntia/UnifrakturMaguntia-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Angry";
+  src: url("Angry/Angry.woff2") format("woff2"),
+    url("Angry/Angry.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Steppe";
+  src: url("Steppe/Steppe.woff2") format("woff2"),
+    url("Steppe/Steppe.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Anticva";
+  src: url("Anticva/Anticva.woff2") format("woff2"),
+    url("Anticva/Anticva.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Arina";
+  src: url("Arina/Arina.woff2") format("woff2"),
+    url("Arina/Arina.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Dryhten";
+  src: url("Dryhten/Dryhten.woff2") format("woff2"),
+    url("Dryhten/Dryhten.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Novelist";
+  src: url("Novelist/Novelist.woff2") format("woff2"),
+    url("Novelist/Novelist.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Celestina";
+  src: url("Celestina/Celestina.woff2") format("woff2"),
+    url("Celestina/Celestina.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Clara";
+  src: url("Clara/Clara.woff2") format("woff2"),
+    url("Clara/Clara.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Elowen";
+  src: url("Elowen/Elowen.woff2") format("woff2"),
+    url("Elowen/Elowen.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Klyakson";
+  src: url("Klyakson/Klyakson.woff2") format("woff2"),
+    url("Klyakson/Klyakson.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Miama";
+  src: url("Miama/Miama.woff2") format("woff2"),
+    url("Miama/Miama.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "PIPS";
+  src: url("PIPS/PIPS.woff2") format("woff2"),
+    url("PIPS/PIPS.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Slimamif";
+  src: url("Slimamif/Slimamif.woff2") format("woff2"),
+    url("Slimamif/Slimamif.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Sweet Mavka";
+  src: url("SweetMavka/SweetMavka.woff2") format("woff2"),
+    url("SweetMavka/SweetMavka.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Tihana";
+  src: url("Tihana/Tihana.woff2") format("woff2"),
+    url("Tihana/Tihana.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Vinograd";
+  src: url("Vinograd/Vinograd.woff2") format("woff2"),
+    url("Vinograd/Vinograd.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Vinograd Oblique";
+  src: url("VinogradOblique/VinogradOblique.woff2") format("woff2"),
+    url("VinogradOblique/VinogradOblique.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Virilica";
+  src: url("Virilica/Virilica.woff2") format("woff2"),
+    url("Virilica/Virilica.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Arcane";
+  src: url("Arcane/Arcane.woff2") format("woff2"),
+    url("Arcane/Arcane.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Architectural";
+  src: url("Architectural/Architectural.woff2") format("woff2"),
+    url("Architectural/Architectural.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Bainsley";
+  src: url("Bainsley/Bainsley.woff2") format("woff2"),
+    url("Bainsley/Bainsley.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Bainsley Italic";
+  src: url("BainsleyItalic/BainsleyItalic.woff2") format("woff2"),
+    url("BainsleyItalic/BainsleyItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Balkara";
+  src: url("Balkara/Balkara.woff2") format("woff2"),
+    url("Balkara/Balkara.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Beer";
+  src: url("Beer/Beer.woff2") format("woff2"),
+    url("Beer/Beer.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "BlackAcute";
+  src: url("BlackAcute/BlackAcute.woff2") format("woff2"),
+    url("BlackAcute/BlackAcute.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Blackberry";
+  src: url("Blackberry/Blackberry.woff2") format("woff2"),
+    url("Blackberry/Blackberry.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Breamcatcher";
+  src: url("Breamcatcher/Breamcatcher.woff2") format("woff2"),
+    url("Breamcatcher/Breamcatcher.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Brusnika";
+  src: url("Brusnika/Brusnika.woff2") format("woff2"),
+    url("Brusnika/Brusnika.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Caesar Dressing";
+  src: url("CaesarDressing/CaesarDressing.woff2") format("woff2"),
+    url("CaesarDressing/CaesarDressing.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Clickuper";
+  src: url("Clickuper/Clickuper.woff2") format("woff2"),
+    url("Clickuper/Clickuper.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Dacha";
+  src: url("Dacha/Dacha.woff2") format("woff2"),
+    url("Dacha/Dacha.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Daray";
+  src: url("Daray/Daray.woff2") format("woff2"),
+    url("Daray/Daray.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Iglets";
+  src: url("Iglets/Iglets.woff2") format("woff2"),
+    url("Iglets/Iglets.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Moon Rocks";
+  src: url("MoonRocks/MoonRocks.woff2") format("woff2"),
+    url("MoonRocks/MoonRocks.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Moscow Metro";
+  src: url("MoscowMetro/MoscowMetro.woff2") format("woff2"),
+    url("MoscowMetro/MoscowMetro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "PIXY";
+  src: url("PIXY/PIXY.woff2") format("woff2"),
+    url("PIXY/PIXY.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Project Space";
+  src: url("ProjectSpace/ProjectSpace.woff2") format("woff2"),
+    url("ProjectSpace/ProjectSpace.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Rounded";
+  src: url("Rounded/Rounded.woff2") format("woff2"),
+    url("Rounded/Rounded.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Rurikviking";
+  src: url("Rurikviking/Rurikviking.woff2") format("woff2"),
+    url("Rurikviking/Rurikviking.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Sambia";
+  src: url("Sambia/Sambia.woff2") format("woff2"),
+    url("Sambia/Sambia.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Trace";
+  src: url("Trace/Trace.woff2") format("woff2"),
+    url("Trace/Trace.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Templegarten";
+  src: url("Templegarten/Templegarten.woff2") format("woff2"),
+    url("Templegarten/Templegarten.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pacifico';
+  src: url('Pacifico/Pacifico-Regular.woff2') format('woff2'),
+    url('Pacifico/Pacifico-Regular.woff') format('woff'),
+    url('Pacifico/Pacifico-Regular.eot'),
+    url('Pacifico/Pacifico-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Pacifico/Pacifico-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'GreatVibes';
+  src: url('GreatVibes/GreatVibesRegular.woff2') format('woff2'),
+    url('GreatVibes/Pacifico-Regular.woff') format('woff'),
+    url("GreatVibes/GreatVibesRegular.svg") format("svg"),
+    url('GreatVibes/GreatVibesRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

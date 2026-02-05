@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Байкал зимой 2026 — Ольхон, Листвянка, Тункинская долина</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --blue: #0077b6;
+  --bg: #f4f7f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #111;
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ================= HEADER ================= */
+
+header {
+  min-height: 100svh; /* iOS safe */
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+header img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -1;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: clamp(28px, 7vw, 56px);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(24px, 5vw, 36px);
+  margin: 60px 0 30px;
+  border-left: 5px solid var(--blue);
+  padding-left: 15px;
+}
+
+.price-box {
+  font-size: 28px;
+  font-weight: 800;
+  background: var(--blue);
+  padding: 12px 30px;
+  border-radius: 50px;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(0,119,182,0.3);
+  margin-bottom: 30px;
+}
+
+/* ================= TG BUTTON ================= */
+
+.tg-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #2AABEE, #229ED9);
+  color: #fff;
+  padding: 16px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(42,171,238,0.4);
+  transition: transform .2s ease, box-shadow .2s ease;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.tg-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(42,171,238,0.55);
+}
+
+/* Кнопка в хедере для десктопа */
+.header-tg-btn {
+  margin-top: 20px;
+  display: none; /* Скрыта на мобильных */
+}
+
+/* fixed mobile button */
+.tg-fixed {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.tg-fixed .tg-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 18px 20px;
+  font-size: 16px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(42, 171, 238, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(42, 171, 238, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(42, 171, 238, 0);
+  }
+}
+
+/* ================= DAY CARDS ================= */
+
+.day-card {
+  background: #fff;
+  border-radius: 24px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.day-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #000;
+}
+
+.day-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* mobile safe */
+}
+
+.day-content {
+  padding: 30px;
+}
+
+.day-content h3 {
+  color: var(--blue);
+  margin-top: 5px;
+  font-size: 22px;
+}
+
+.day-label {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #999;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+ul li::before {
+  content: "❄️";
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+}
+
+/* ================= INFO ================= */
+
+.info-section {
+  background: var(--blue);
+  color: #fff;
+  border-radius: 30px;
+  padding: 40px 30px;
+  margin: 60px 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.info-section h3 {
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 10px;
+}
+
+.check li::before {
+  content: "✔️";
+}
+
+/* ================= GALLERY ================= */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* ================= DESKTOP ================= */
+
+@media (min-width: 768px) {
+  .day-card {
+    flex-direction: row;
+    min-height: 450px;
+  }
+
+  .day-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .day-image {
+    width: 50%;
+    aspect-ratio: auto;
+  }
+
+  .day-image img {
+    object-fit: cover;
+  }
+
+  .day-content {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Показываем кнопку в хедере на десктопе */
+  .header-tg-btn {
+    display: inline-flex;
+  }
+  
+  /* Скрываем фиксированную кнопку на десктопе */
+  .tg-fixed {
+    display: none;
+  }
+  
+  /* Кнопка регистрации после галереи для десктопа */
+  .desktop-register {
+    text-align: center;
+    margin: 60px 0;
+  }
+  
+  .desktop-register .tg-btn {
+    padding: 20px 40px;
+    font-size: 20px;
+  }
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: #111;
+  color: rgba(255,255,255,0.6);
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Дополнительная кнопка регистрации в конце страницы */
+.register-section {
+  text-align: center;
+  margin: 60px 0 40px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(0,119,182,0.1), rgba(42,171,238,0.1));
+  border-radius: 20px;
+}
+
+.register-section h2 {
+  text-align: center;
+  border: none;
+  font-size: 32px;
+  color: var(--blue);
+}
+
+.register-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="assets/img/img_0.webp" alt="Зимний Байкал">
+  <div class="overlay"></div>
+
+  <div class="wrap">
+    <p style="font-weight:600; letter-spacing:1px;">💫 25 ФЕВРАЛЯ — 3 МАРТА</p>
+    <h1>Байкал зимой: Ольхон, Листвянка, Тункинская долина</h1>
+    <p style="font-size:18px; opacity:.9;">7 дней / 6 ночей погружения в ледяную сказку</p>
+
+    <div class="price-box">79 000 ₽</div>
+    
+    <!-- Кнопка записи в хедере (видна только на десктопе) -->
+    <a href="https://t.me/Baikalturbot?start=baikal2026" class="tg-btn header-tg-btn">
+      🚀 Записаться в Telegram
+    </a>
+  </div>
+</header>
+
+<main class="wrap">
+
+<h2>Программа путешествия</h2>
+
+<!-- DAY 1 -->
+<div class="day-card">
+  <div class="day-image"><img src="assets/img/img_1.webp" alt=""></div>
+  <div class="day-content">
+    <span class="day-label">День 1</span>
+    <h3>Прилёт и мягкая адаптация</h3>
+    <ul>
+      <li>прилёт в Иркутск</li>
+      <li>Размещение и отдых</li>
+      <li>Cвободное время, отдых после перелёта, адаптация к часовому поясу</li>
+      <li>📍 Ночёвка: Иркутск</li>
+      <li>📶 Связь: есть</li>
+    </ul>
+  </div>
+</div>
+
+<!-- DAY 2 -->
+<div class="day-card">
+  <div class="day-image"><img src="assets/img/img_9.jpg" alt=""></div>
+  <div class="day-content">
+    <span class="day-label">День 2</span>
+    <h3>Активация чувств</h3>
+    <ul>
+    	<h3>Иркутск → устье реки Анга → Тажеранские степи → Ольхон</h3>
+      <li>08:00 — выезд из Иркутска</li>
+      <li>10:00 — полноценный обед в национальном кафе</li>
+      <li>11:30 — посещение мараловой фермы</li>
+      <li>12:30 — устье реки Анга, бухта Ая, древние петроглифы</li>
+       <li>14:00 — Тажеранские степи, смотровые площадки с панорамами Байкала и Ольхона</li>
+      <li>15:00 — встреча и беседа с шаманкой</li>
+      <li>16:30 — пролив Малое Море: ледовые гроты, наплески, природная ледовая галерея</li>
+      <li>18:00 — заселение в гостиницу на Ольхоне</li>
+      <li>19:30 — ужин</li>
+      <li>🚗 Пробег: ~350 км</li>
+      <li>📶 Связь: есть</li>
+    </ul>
+  </div>
+</div>
+
+<!-- DAY 3 -->
+<div class="day-card">
+  <div class="day-image"><img src="assets/img/img_11.webp" alt=""></div>
+  <div class="day-content">
+    <span class="day-label">День 3</span>
+    <h3>Энергия великого озера</h3>
+    <ul>
+    	<h3>Север Ольхона — по земле и по льду Байкала</h3>
+      <li>08:30 — завтрак</li>
+      <li>09:00 — старт дня, выезд на лёд</li>
+      <li>10:30–11:00 — посёлок Хужир, сердце острова</li>
+      <li>11:30 — Харанцы, бухта Песчаная</li>
+      <li>13:00 — реликтовый лес Ольхона, Прибайкальский национальный парк</li>
+      <li>14:30 — Узуры, «Хранитель Байкала»</li>
+      <li>15:00 — мыс Любви, смотровая площадка</li>
+      <li>16:30 — мыс Хобой: прогулка, пикник, чайная церемония с байкальскими травами</li>
+      <li>17:30 — мыс Три Брата</li>
+      <li>18:00 — степи Ольхона</li>
+      <li>19:00 — возвращение в Хужир, ужин</li>
+      <li>19:30 — баня на берегу Байкала</li>
+      <li>🚗 Пробег: ~200 км</li>
+      <li>📶 Связь: может периодически отсутствовать</li>
+    </ul>
+  </div>
+</div>
+
+<!-- DAY 4 -->
+<div class="day-card">
+  <div class="day-image"><img src="assets/img/img_2.webp" alt=""></div>
+  <div class="day-content">
+    <span class="day-label">День 4</span>
+    <h3>Завершение протокола</h3>
+    <ul>
+    	<h3>Ольхон → ледовые миры Байкала → Иркутск</h3>
+      <li>09:00 — завтрак, выезд из гостиницы</li>
+      <li>10:00 — остров Огой, Ступа Просветления: лёгкий трекинг, ритуалы</li>
+      <li>12:00 — ледовые гроты, катание на коньках, «поцелуй Байкала»</li>
+      <li>13:30 — лёд Шаманки, ледовая выставка природных фигур</li>
+      <li>14:30 — острова: Харанцы → Крокодил → Ёдр</li>
+      <li>15:30 — байкальские торосы, кристально-голубой лёд</li>
+      <li>16:30 — закат на льду или со смотровой площадки</li>
+      <li>17:00 — выезд в Иркутск</li>
+      <li>22:00 — прибытие</li>
+      <li>🚗 Пробег: ~500 км</li>
+      <li>📶 Связь: есть</li>
+    </ul>
+  </div>
+</div>
+<!-- DAY 5 -->
+<div class="day-card">
+  <div class="day-image"><img src="assets/img/img_12.jpg" alt=""></div>
+  <div class="day-content">
+    <span class="day-label">День 5</span>
+    <h3>знакомство с Байкалом</h3>
+    <ul>
+    	<h3>Иркутск → Листвянка → Иркутск</h3>
+      <li>08:30 — завтрак</li>
+      <li>09:30 — выезд в Листвянку (~70 км)</li>
+      <li>11:00 — Байкальский музей</li>
+      <li>12:30 — канатная дорога на Камень Черского</li>
+      <li>14:00 — обед (омуль, позы, уха)</li>
+      <li>15:30 — набережная, рынок, сувениры</li>
+      <li>17:00 — прогулка по льду Байкала</li>
+      <li>19:00 — возвращение в Иркутск</li>
+      <li>🚗 Пробег: ~150 км</li>
+      <li>📶 Связь: есть</li>
+      <li>📍 Ночёвка: Иркутск</li>
+    </ul>
+  </div>
+</div>
+<!-- DAY 6 -->
+<div class="day-card">
+  <div class="day-image"><img src="assets/img/img_5.jpeg" alt=""></div>
+  <div class="day-content">
+    <span class="day-label">День 6</span>
+    <h3>Тункинская долина</h3>
+    <ul>
+    	<h3>Иркутск → Аршан / Тунка → Иркутск</h3>
+      <li>07:30 — завтрак</li>
+      <li>08:00 — выезд в Тункинскую долину (~210 км)</li>
+      <li>Программа на курорте Аршан:</li>
+       <li>Ступа Даши-Гомана</li>
+      <li>Хойморский дацан (вход свободный)</li>
+      <li>💧 питьевые и лечебные минеральные источники
+тропа здоровья, водопад на реке Кынгарга</li>
+       <li>Монгольский рынок (свободное время)</li>
+      <li>Т♨️ купание в термальных источниках
+Аршанская сель (каменная река)</li>
+      <li>🦌 этно-комплекс «Саянский Марал»</li>
+       <li>15:00 — обед</li>
+      <li>16:00 — прогулки, горные панорамы</li>
+      <li>18:00 — выезд обратно в Иркутск</li>
+       <li>22:00 — прибытие</li>
+      <li>🚗 Пробег: ~420 км</li>
+      <li>📶 Связь: местами</li>
+       <li>📍 Ночёвка: Иркутск</li>
+    </ul>
+  </div>
+ </div>
+ <!-- DAY 7 -->
+<div class="day-card">
+  <div class="day-image"><img src="assets/img/img_15.jpg" alt=""></div>
+  <div class="day-content">
+    <span class="day-label">День 7</span>
+    <h3>Возвращение</h3>
+    <ul>
+    	<h3>Иркутск → Уфа</h3>
+      <li>— завтрак</li>
+      <li> трансфер в аэропорт</li>
+      <li>— перелёт домой</li>
+     </ul>
+  </div>
+</div>
+<section class="info-section">
+  <div class="info-grid">
+    <div>
+      <h3>✅ Включено</h3>
+      <ul class="check">
+        <li>Проживание по всему маршруту</li>
+        <li>Питание: завтраки и ужины</li>
+        <li>Все трансферы и активности</li>
+        <li>Экскурсионное сопровождение</li>
+         <li>Все активности, указанные в программе</li>
+        <li>профессиональная фото- и видеосъёмка на острове Ольхон с квадрокоптера (дрон)</li>
+            </ul>
+    </div>
+    <div>
+      <h3>❌ Дополнительно</h3>
+      <ul>
+        <li>Перелёт</li>
+        <li>Обеды</li>
+        <li>Личные расходы</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<h2>Фотогалерея</h2>
+
+<div class="gallery">
+  <img src="assets/img/img_14.jpg">
+  <img src="assets/img/img_15.jpg">
+  <img src="assets/img/img_16.jpg">
+  <img src="assets/img/img_17.jpg">
+  <img src="assets/img/img_18.jpg">
+  <img src="assets/img/img_19.jpg">
+  <img src="assets/img/img_20.jpg">
+  <img src="assets/img/img_21.jpg">
+</div>
+
+<!-- Секция регистрации в конце страницы -->
+<section class="register-section">
+  <h2>Готовы к приключению?</h2>
+  <p>Забронируйте место в туре на Байкал прямо сейчас. Осталось всего несколько мест!</p>
+  <a href="https://t.me/Baikalturbot?start=baikal2026" class="tg-btn">
+    🚀 Забронировать место
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Байкал с трёх сторон</p>
+</footer>
+
+<!-- Фиксированная кнопка для мобильных -->
+<div class="tg-fixed">
+  <a href="https://t.me/Baikalturbot?start=baikal2026" class="tg-btn">
+    📱 Записаться в Telegram
+  </a>
+</div>
+
+</body>
+</html>
